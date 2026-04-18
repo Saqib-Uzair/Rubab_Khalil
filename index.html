@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rubab Khalil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+
+    body {
+      background:#0f172a;
+      color:#e2e8f0;
+      line-height:1.6;
+    }
+
+    header {
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background: radial-gradient(circle at top, #1e3a8a, #020617);
+    }
+
+    header img {
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      border:4px solid #22c55e;
+      margin-bottom:20px;
+    }
+
+    header h1 {
+      font-size:2.8rem;
+      font-weight:700;
+    }
+
+    header p {
+      margin-top:10px;
+      color:#94a3b8;
+    }
+
+    nav {
+      position:sticky;
+      top:0;
+      background:#020617;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      padding:15px;
+      z-index:1000;
+      border-bottom:1px solid #1e293b;
+    }
+
+    nav a {
+      color:#cbd5f5;
+      text-decoration:none;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav a:hover {
+      color:#22c55e;
+    }
+
+    section {
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    h2 {
+      font-size:2rem;
+      margin-bottom:20px;
+      color:#22c55e;
+    }
+
+    .card {
+      background:#020617;
+      padding:25px;
+      border-radius:16px;
+      margin-bottom:25px;
+      border:1px solid #1e293b;
+      transition:0.3s;
+    }
+
+    .card:hover {
+      transform:translateY(-5px);
+      border-color:#22c55e;
+    }
+
+    .skills span {
+      display:inline-block;
+      background:#1e293b;
+      padding:8px 14px;
+      border-radius:20px;
+      margin:5px;
+      font-size:0.9rem;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+
+    .btn {
+      display:inline-block;
+      padding:12px 20px;
+      background:#22c55e;
+      color:#020617;
+      border-radius:8px;
+      text-decoration:none;
+      margin-top:15px;
+      font-weight:600;
+    }
+
+    footer {
+      text-align:center;
+      padding:20px;
+      border-top:1px solid #1e293b;
+      color:#64748b;
+    }
+
+    /* Mobile Optimization */
+    @media(max-width:600px) {
+      header h1 { font-size:2rem; }
+      nav { flex-wrap:wrap; gap:10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="./profile.jpg" alt="Profile">
+  <h1>Rubab Khalil</h1>
+  <p>Clinical Pharmacist | Researcher | Patient Safety Advocate</p>
+  <a href="resume.pdf" download class="btn">Download Resume</a>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#research">Research</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a PharmD graduate with strong interest in clinical pharmacy, pharmacovigilance, and research. I aim to improve patient outcomes through evidence-based healthcare and effective medication management.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card skills">
+    <span>Clinical Pharmacy</span>
+    <span>Drug Information</span>
+    <span>Pharmacovigilance</span>
+    <span>Research Writing</span>
+    <span>Patient Counseling</span>
+    <span>Research Tools</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Hospital Pharmacy</h3>
+      <p>Worked with healthcare professionals to ensure safe medication practices and patient counseling.</p>
+    </div>
+
+    <div class="card">
+      <h3>WHO (LQAS & PCM-Training)</h3>
+      <p>Quality Assessment of immunization for the polio campaign.</p>
+    </div>
+
+    <div class="card">
+      <h3>Horizon Pharmaceuticals (Pvt) Ltd</h3>
+      <p>Gained hands on experience in supervision of Product and Sales Manager and supporting sale stratgies.</p>
+    </div>
+
+    <div class="card">
+        <h3>Bosch Pharmaceuticals (Pvt) Ltd</h3>
+        <p>Experienced in QA, QC and production of cephalosporin antibiotics with strong adherence to GMP standards and batch documentations. Skilled in analytical techniques including HPLC.
+        </p>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Cancer Research Fellowship (MRC)</h3>
+      <ul>
+        
+        <li>Systemic review and meta analysis of clinical trials on Neoadjuvant chemoimmunotherapy in NSCLC.
+        </li>
+
+        <li>Conducted literature review and data collection on HER2-positive breast cancer.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Key Strengths</h3>
+      <ul>
+        <li>Critical thinking and analytical skills.</li>
+        <li>Attention to detail in research and documentations.</li>
+        <li>Skilled in literature review, data interpretation and research writing.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: rubabkhalil94@gmail.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/rubab-khalil-4808aa256/</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Rubab Khalil. All rights reserved</p>
+</footer>
+
+<script>
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
+</body>
+</html>
